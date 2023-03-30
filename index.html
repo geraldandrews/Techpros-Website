@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>3D Image Slider</title>
+  </head>
+
+  <body>
+    <nav class="nav-container">
+      <div class="navbar">
+        <img src="img/logo.png" id="navbar-logo" alt="Logo">
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-links">About</a></li>
+          <li><a href="#slider" class="nav-links">Products</a></li>
+          <li><a href="#services" class="nav-links">Services</a></li>
+          <li><a href="#testimonials" class="nav-links">Testimonials</a></li>
+          <li><a href="#contact" class="nav-links">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Techpros Corporation</h1>
+      <h3>Technology products and solutions for you and your business needs.</h3>
+      <div class="header-images">
+        <div class="images">
+          <img src="img/photo-1.jpeg" class="header-img">
+        </div>
+        <div class="images">
+          <img src="img/photo-5.jpeg" class="header-img">
+        </div>
+        <div class="images">
+          <img src="img/photo-7.jpeg" class="header-img">
+        </div>
+        <div class="images">
+          <img src="img/photo-8.jpeg" class="header-img">
+        </div>
+      </div>
+    </header>
+
+    <div id="about">
+      <div class="about-section">
+        <div class="about-info">
+          <h1>Our Mission</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus ab necessitatibus
+            totam aut dicta adipisci rem, doloribus voluptates itaque rerum voluptas sit, error odio 
+            dolorem, sequi minima officia quo provident est ullam corrupti unde accusantium. Dolores 
+            debitis sint perspiciatis cumque, omnis repellendus nemo dicta facilis blanditiis vel rem 
+            accusantium nulla officiis cum, itaque consequuntur unde, eius mollitia doloribus. Earum hic
+            explicabo sit? Assumenda neque temporibus blanditiis! Dignissimos eveniet obcaecati 
+            repudiandae vitae. Iste sit optio quibusdam a eum eveniet quo consectetur pariatur. A 
+            dignissimos, cumque veritatis porro exercitationem iure suscipit perferendis, aut libero 
+            autem fugiat quasi, quod praesentium provident quisquam.
+          </p>
+          <button class="btn">Get Started</button>
+        </div>
+        <div class="about-img">
+          <img src="img/about.png" alt="technology working">
+        </div> 
+      </div>
+    </div>
+
+    <!-- Modal-->
+    <div class="modal" id="email">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-content-left">
+          <img id="modal-img" src="img/computer logo.png" alt="computer-logo">
+        </div>
+        <div class="modal-content-right">
+          <form action="/" method="GET" class="modal-form" id="form">
+            <h1>Get started with us today! Create your account by filling out the information below.</h1>
+            <div class="form-validation">
+              <input type="text" class="modal-input" id="name" name="name" placeholder="Enter your name">
+              <p></p>
+            </div>
+            <div class="form-validation">
+              <input type="email" class="modal-input" id="email" name="email" placeholder="Enter your email">
+              <p></p>
+            </div>
+            <div class="form-validation">
+              <input type="password" class="modal-input" id="password" name="password" placeholder="Enter your password">
+              <p></p>
+            </div>
+            <div class="form-validation">
+              <input type="password" class="modal-input" id="password-confirm" name="password" placeholder="Confirm your password">
+              <p></p>
+            </div>
+            <input type="submit" class="modal-input-btn" value="Sign Up">
+            <span class="modal-input-login">Already have an account? Login<a href="#"> here</a></span>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <section id="slider">
+      <h1>Our Products</h1>
+      <div class="gallery">
+        <div class="gallery-container">
+            <img class="gallery-item gallery-item-1" src="img/product-0.png" data-index="1">
+            <img class="gallery-item gallery-item-2" src="img/product-1.png" data-index="1">
+            <img class="gallery-item gallery-item-3" src="img/product-2.png" data-index="1">
+            <img class="gallery-item gallery-item-4" src="img/product-3.png" data-index="1">
+            <img class="gallery-item gallery-item-5" src="img/product-4.png" data-index="1">
+        </div>
+        <div id="gallery-text"></div>
+
+        <div class="gallery-controls"></div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h1>Services We Offer</h1>
+      <p class="services-messege">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus accusamus voluptates ut incidunt, dolorem repellat exercitationem! Minima eius ratione perferendis?</p>
+      <button class="btn"><a href="#contact">Contact Us</a></button>
+
+      <div class="services-section">
+        <div class="card">
+          <img src="img/web-development.jpeg" alt="web development">
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae similique dolore molestias!
+            Mollitia tempora magnam deleniti qui, possimus voluptate eligendi.
+          </p>
+        </div>
+        <div class="card">
+          <img src="img/graphic-design.jpeg" alt="graphic design">
+          <h3>Graphic Design</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae similique dolore molestias!
+            Mollitia tempora magnam deleniti qui, possimus voluptate eligendi.
+          </p>
+        </div>
+        <div class="card">
+          <img src="img/video-editing.jpeg" alt="video editing">
+          <h3>Video Editing</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae similique dolore molestias!
+            Mollitia tempora magnam deleniti qui, possimus voluptate eligendi.
+          </p>
+        </div>
+        <div class="card">
+          <img src="img/computer-repair.jpeg" alt="computer repair">
+          <h3>Computer Repair</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae similique dolore molestias!
+            Mollitia tempora magnam deleniti qui, possimus voluptate eligendi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h1>Why Choose Us</h1>
+      <p>
+        See what our clients have to say about us.
+      </p>
+      <div class="testimonials-section">
+        <div class="card">
+          <h3>John Smith</h3>
+          <h4>CEO, Smith Engineering Firm</h4>
+          <div class="top-inner-card"></div>
+            <div class="inner-card">
+              <div class="quotes-img">
+                <img src="img/quotes.png" class="quote" alt="quotes-left">
+                <img src="img/person.webp" alt="person-1">
+                <img src="img/quotes-2.png" class="quote" alt="quotes-right">
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit facere eveniet voluptas,
+                aperiam praesentium distinctio cum maxime vitae fugiat facilis? Accusantium eligendi 
+                magnam exercitationem eum?
+              </p>
+            </div>
+        </div>
+        <div class="card">
+          <h3>Mary Major</h3>
+          <h4>CEO, Modern Fashion Stores</h4>
+          <div class="top-inner-card"></div>
+            <div class="inner-card">
+              <div class="quotes-img">
+                <img src="img/quotes.png" class="quote" alt="quotes-left">
+                <img src="img/person-3.jpeg" alt="person-3">
+                <img src="img/quotes-2.png" class="quote" alt="quotes-right">
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit facere eveniet voluptas,
+                aperiam praesentium distinctio cum maxime vitae fugiat facilis? Accusantium eligendi 
+                magnam exercitationem eum?
+              </p>
+            </div>
+        </div>
+        <div class="card">
+          <h3>Richard Miles</h3>
+          <h4>President, Duncan Restaurant Chain</h4>
+          <div class="top-inner-card"></div>
+            <div class="inner-card">
+              <div class="quotes-img">
+                <img src="img/quotes.png" class="quote" alt="quotes-left">
+                <img src="img/person-2.jpeg" alt="person-2">
+                <img src="img/quotes-2.png" class="quote" alt="quotes-right">
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit facere eveniet voluptas,
+                aperiam praesentium distinctio cum maxime vitae fugiat facilis? Accusantium eligendi 
+                magnam exercitationem eum?
+              </p>
+            </div>
+        </div>
+        <div class="card">
+          <h3>Carla Poe</h3>
+          <h4>GM, Grand Marketing Agency</h4>
+          <div class="top-inner-card"></div>
+            <div class="inner-card">
+              <div class="quotes-img">
+                <img src="img/quotes.png" class="quote" alt="quotes-left">
+                <img src="img/person-4.webp" alt="person-4">
+                <img src="img/quotes-2.png" class="quote" alt="quotes-right">
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit facere eveniet voluptas,
+                aperiam praesentium distinctio cum maxime vitae fugiat facilis? Accusantium eligendi 
+                magnam exercitationem eum?
+              </p>
+            </div>
+        </div>
+        <div class="card">
+          <h3>Ralph Stiles</h3>
+          <h4>CEO, Techno Industries</h4>
+          <div class="top-inner-card"></div>
+            <div class="inner-card">
+              <div class="quotes-img">
+                <img src="img/quotes.png" class="quote" alt="quotes-left">
+                <img src="img/person-5.webp" alt="person-5">
+                <img src="img/quotes-2.png" class="quote" alt="quotes-right">
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit facere eveniet voluptas,
+                aperiam praesentium distinctio cum maxime vitae fugiat facilis? Accusantium eligendi 
+                magnam exercitationem eum?
+              </p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-info">
+        <div class="location">
+          <h1>Our Main Location</h1>
+          <div class="contact-mode"><i class="fas fa-location"></i>301 Hanover Street New York, NY 10016</div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799107578!2d-74.259874205376!3d40.69767006429885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1679794788269!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-form">
+          <div class="content">
+            <h1>Contact Us</h1>
+            <div class="contact-mode"><i class="fas fa-phone"></i>(202)555-0136</div>
+            <div class="contact-mode"><i class="fas fa-envelope"></i>techpro@gmail.com</div>
+            <p>How can we help? Leave a message below and we'll get back to you shortly.</p>
+          </div>
+          <div class="form">
+            <div class="top-form">
+              <div class="inner-form">
+                <div class="label">name</div>
+                <input type="text" placeholder="John">
+              </div>
+              <div class="inner-form">
+                <div class="label">email</div>
+                <input type="text" placeholder="example@gmail.com">
+              </div>
+              <div class="inner-form">
+                <div class="label">phone</div>
+                <input type="text" placeholder="123-456-7890">
+              </div>
+            </div>
+            <div class="middle-form">
+              <div class="inner-form">
+                <div class="label">subject</div>
+                <input type="text" placeholder="Subject">
+              </div>
+            </div>
+            <div class="bottom-form">
+              <div class="inner-form">
+                <div class="label">message</div>
+                <textarea placeholder="your message"></textarea>
+              </div>
+            </div>
+            <button class="btn">submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="business">
+          <div class="icon"><i class="fas fa-clock"></i>Business Hours</div>
+          <div class="business-hours">
+            <div class="day">
+              <p>Monday</p>
+              <p>Tuesday</p>
+              <p>Wednesday</p>
+              <p>Thursday</p>
+              <p>Friday</p>
+              <p>Saturday</p>
+              <p>Sunday</p>
+            </div>
+            <div class="hours">
+              <p>8:00AM - 5:00PM</p>
+              <p>8:00AM - 5:00PM</p>
+              <p>8:00AM - 5:00PM</p>
+              <p>8:00AM - 5:00PM</p>
+              <p>8:00AM - 5:00PM</p>
+              <p>8:00AM - 5:00PM</p>
+              <p>Closed</p>
+            </div>
+          </div>
+        </div>
+        <div class="address-section">
+          <div class="icon"><i class="fas fa-map-marker-alt"></i>Our locations</div>
+          <div class="address">
+            <p>301 Hanover Street</p>
+            <p>New York, New York 10016</p>
+          </div>
+          <div class="address">
+            <p>3843 Geneva Street</p>
+            <p>New York, New York 10016</p>
+          </div>
+        </div>
+        <div class="links-section">
+          <div class="icon"><i class="fas fa-link"></i>Useful Links</div>
+          <div class="links">
+            <p>F.A.Q</p>
+            <p>Partnerships</p>
+            <p>Careers</p>
+            <p>Support</p>
+          </div>
+        </div>
+        <div class="links-section">
+          <div class="icon"><i class="fas fa-globe"></i>Services</div>
+          <div class="links">
+            <p>Web Development</p>
+            <p>Graphic Design</p>
+            <p>Video Editing</p>
+            <p>Computer Repair</p>
+          </div>
+        </div>
+      </div>
+      <p class="follow">Follow Us On</p>
+      <div class="social-icons">
+        <div class="line"></div>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="line"></div>
+      </div>
+      <div class="company-logo">
+        <img src="img/logo.png" alt="logo">
+        <p>Copyright &#169 2023 Techpros Corporation. All rights reserved.</p>
+      </div>
+      <div class="terms">
+        <p>Terms</p>
+        <p>Privacy</p>
+        <p>Security</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top hidden"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html> 
