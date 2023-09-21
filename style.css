@@ -1289,6 +1289,10 @@ footer .terms p:nth-child(3){
     text-align: center;
 }
 
+.designer a {
+    color: #000;
+}
+
 @media (max-width: 820px) {
     .business {
         width: 30%;
