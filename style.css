@@ -308,6 +308,7 @@ header h3 {
 .about-info p {
     margin-top: 25px;
     line-height: 25px;
+    font-size: 1.2rem;
 }
 
 .about-info .btn {
