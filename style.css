@@ -24,6 +24,7 @@ body {
     cursor: pointer;
     opacity: 100%;
     animation: fadeIn 1s;
+    z-index: 1;
 }
 
 @keyframes fadeIn {
