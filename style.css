@@ -1280,12 +1280,12 @@ footer .terms p:nth-child(3){
     border-right: none;
 }
 
-footer .designer {
+.designer {
     background: #82afc2;
     padding: 15px 0;
 }
 
-footer .designer p {
+.designer p {
     text-align: center;
 }
 
