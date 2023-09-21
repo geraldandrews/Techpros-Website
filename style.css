@@ -235,7 +235,7 @@ header h3 {
     grid-template-columns: repeat(4, 1fr);
     max-width: 1200px;
     margin: 0 auto;
-    transform: translateY(80px);
+    transform: translateY(60px);
     padding: 0;
     height: auto;
 }
@@ -270,7 +270,6 @@ header h3 {
 
     .header-images {
         max-width: 725px;
-        transform: translateY(60px);
     }
 }
 
