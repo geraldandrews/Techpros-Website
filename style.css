@@ -1295,4 +1295,8 @@ footer .terms p:nth-child(3){
     footer .company-logo img {
         width: 15%;
     }
+
+    footer .social-icons .line {
+        width: 25%;
+    }
 }
