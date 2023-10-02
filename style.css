@@ -1299,4 +1299,8 @@ footer .terms p:nth-child(3){
     footer .social-icons .line {
         width: 25%;
     }
+
+    .designer p {
+        padding: 0 25px;
+    }
 }
