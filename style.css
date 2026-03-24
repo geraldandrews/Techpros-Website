@@ -727,10 +727,6 @@ header h3 {
         max-width: 100%;
         height: auto;
     }
-
-    .gallery-controls-next::before {
-        right: -40px;
-    }
 }
 
 /* SERVICES SECTION */
